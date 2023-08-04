@@ -15,7 +15,10 @@ export const Intro = () => {
       </div>
       <ul className="w-full mt-5 flex flex-col items-center gap-3 ">
         {socialMedias.map((socialMedia) => (
-          <li className="cursor-pointer w-full flex justify-center">
+          <li
+            key={socialMedia.name} 
+            className="cursor-pointer w-full flex justify-center"
+          >
             <SocialMediaButton socialMediaItem={socialMedia} />
           </li>
         ))}
