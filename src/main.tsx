@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import { HomePage } from './pages/HomePage'
-import { IS_DEVELOPMENT } from './utils/isDevelopment'
 import { HashRouter, BrowserRouter } from 'react-router-dom'
 import { AppRouter } from './router/AppRouter'
+import './index.css'
+
+import { IS_DEVELOPMENT } from './utils/isDevelopment'
 
 const Router = ({children}: {children: React.ReactNode}) => {
   return (

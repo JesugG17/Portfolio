@@ -6,11 +6,11 @@ export const SocialMediaButton: FC<Props> = ({ socialMediaItem }) => {
     <a
       download="cv-gastelum"
       href={socialMediaItem.link}
-      className="bg-primary w-3/5 px-6 py-2 rounded-full flex justify-center items-center gap-3 hover:scale-105 transition-all duration-200 md:gap-6"
+      className="w-full flex justify-center items-center gap-3 md:gap-6"
       target="_blank"
     >
       <img
-        className="w-8 h-8 invert"
+        className="w-8 h-8 invert lg:w-6 lg:h-6"
         src={socialMediaItem.img}
         alt={`${socialMediaItem.name} icon`}
       />
