@@ -4,16 +4,19 @@ import socialMedias from "../mocks/socialMedia.json";
 console.log(socialMedias);
 export const Intro = () => {
   return (
-    <article className="flex flex-col items-center gap-5 text-white">
+    <article className="flex flex-col items-center gap-8 text-white">
       <img
         className="h-32 w-32 rounded-full object-cover"
         src="/img/photo.jpg"
         alt=""
       />
-      <h2 className="text-3xl text-center">Hi, I´m Jesus Gastelum</h2>
-      <ul className="mt-5 flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
+        <h2 className="text-5xl text-center">Hi, I´m Jesus Gastelum</h2>
+        <p className="opacity-60 text-xl text-center">Web develoepr</p>
+      </div>
+      <ul className="w-full mt-5 flex flex-col items-center gap-3 ">
         {socialMedias.map((socialMedia) => (
-          <li>
+          <li className="cursor-pointer w-full flex justify-center">
             <SocialMediaButton socialMediaItem={socialMedia} />
           </li>
         ))}

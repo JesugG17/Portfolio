@@ -10,8 +10,8 @@
         "img": "/img/github.png"
     },
     {
-        "name": "CV",
+        "name": "My CV",
         "img": "/img/cv.png",
-        "link": "some"
+        "link": "/cv-gastelum.pdf"
     }
 ]
