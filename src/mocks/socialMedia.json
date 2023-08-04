@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Linkedin",
+        "link": "https://www.linkedin.com/in/jesus-gastelum-433795225/",
+        "img": "/img/linkedin.png"
+    },
+    {
+        "name": "Github",
+        "link": "https://github.com/JesugG17",
+        "img": "/img/github.png"
+    },
+    {
+        "name": "CV",
+        "img": "/img/cv.png",
+        "link": "some"
+    }
+]

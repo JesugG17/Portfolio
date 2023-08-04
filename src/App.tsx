@@ -1,11 +1,10 @@
 import { Intro } from "./components/Intro"
-import { Navbar } from "./components/Navbar"
+
 
 export const App = () => {
   return (
-    <>
-      <Navbar />
+    <main className="bg-background min-h-screen py-20">
       <Intro />
-    </>
+    </main>
   )
 }
