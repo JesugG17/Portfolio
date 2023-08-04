@@ -1,7 +1,6 @@
 import { SocialMediaButton } from "./SocialMediaButton";
 import socialMedias from "../mocks/socialMedia.json";
 
-console.log(socialMedias);
 export const Intro = () => {
   return (
     <article className="flex flex-col items-center gap-8 text-white">

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "HTML",
+        "logo": "/img/skills/html.svg"
+    },
+    {
+        "name": "CSS",
+        "logo": "/img/skills/css3.svg"
+    },
+    {
+        "name": "Tailwind",
+        "logo": "/img/skills/tailwindcss.svg"
+    },
+    {
+        "name": "Javascript",
+        "logo": "/img/skills/javascript.svg"
+    },
+    {
+        "name": "Typescript",
+        "logo": "/img/skills/typescript.svg"
+    },
+    {
+        "name": "React",
+        "logo": "/img/skills/react.svg"
+    },
+    {
+        "name": "NodeJS",
+        "logo": "/img/skills/nodejs.svg"
+    },
+    {
+        "name": "Express",
+        "logo": "/img/skills/express-js.svg"
+    },
+    {
+        "name": "Postgresql",
+        "logo": "/img/skills/postgresql.svg"
+    },
+    {
+        "name": "Mongo",
+        "logo": "/img/skills/mongodb.svg"
+    }
+]
