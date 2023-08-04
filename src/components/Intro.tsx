@@ -3,7 +3,7 @@ import socialMedias from "../mocks/socialMedia.json";
 
 export const Intro = () => {
   return (
-    <article className="flex flex-col items-center gap-8 text-white">
+    <article className="flex min-h-screen flex-col items-center gap-8 text-white">
       <img
         className="h-32 w-32 rounded-full object-cover"
         src="/img/photo.jpg"

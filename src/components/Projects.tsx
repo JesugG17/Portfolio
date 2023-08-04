@@ -21,8 +21,7 @@ const fakeProjects = [
     description: 'one description',
     img: "/img/test.jpg"
   },
-]
-
+];
 
 export const Projects = () => {
   return (

@@ -3,7 +3,7 @@ import skills from '../mocks/skills.json';
 
 export const Skills = () => {
   return (
-    <article className='px-4  flex flex-col gap-8 '>
+    <article className='px-4 min-h-screen flex flex-col gap-8 '>
       <h4 className="text-center text-5xl text-white font-bold">Skills</h4>
       <ul className='flex flex-wrap w-full gap-3  justify-center'>
         {
