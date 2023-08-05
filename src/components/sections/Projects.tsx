@@ -1,5 +1,5 @@
-import { ProjectCard } from "./ProjectCard"
-
+import { ProjectCard } from "../ProjectCard"
+import projects from '../../mocks/projects.json';
 const fakeProjects = [
   {
     id: 1,
@@ -33,7 +33,7 @@ export const Projects = () => {
       <h4 className="text-white text-5xl text-center font-bold">My projects</h4>
       <ul className="w-full flex flex-wrap justify-center gap-2 text-white  md:gap-5">
         {
-          fakeProjects.map( (project, index) => (
+          projects.map( (project, index) => (
             <ProjectCard 
               key={index}
               project={project}

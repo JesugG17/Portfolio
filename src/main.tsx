@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { HashRouter, BrowserRouter } from 'react-router-dom'
 import { AppRouter } from './router/AppRouter'
+
 import './index.css'
 
 import { IS_DEVELOPMENT } from './utils/isDevelopment'
@@ -27,9 +28,9 @@ const Router = ({children}: {children: React.ReactNode}) => {
 }
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Router>
       <AppRouter />
     </Router>
-  </React.StrictMode>
+  // </React.StrictMode>
 )
