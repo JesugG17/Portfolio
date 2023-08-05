@@ -1,10 +1,10 @@
-import { Link } from 'react-scroll';
-import { SocialMediaButton } from "./SocialMediaButton";
-import socialMedias from "../mocks/socialMedia.json";
+import { Link }  from 'react-scroll';
+import { SocialMediaButton } from "../SocialMediaButton";
+import socialMedias from "../../mocks/socialMedia.json";
 
 export const Intro = () => {
   return (
-    <article className="flex min-h-screen flex-col items-center gap-8 text-white">
+    <article className="flex min-h-screen flex-col items-center gap-3 text-white lg:gap-8">
       <img
         className="h-32 w-32 rounded-full object-cover lg:w-48 lg:h-48"
         src="/img/photo.jpg"
@@ -31,9 +31,10 @@ export const Intro = () => {
       </p>
       <Link 
         to="skills"
+        onClick={() =>  console.log('click')}
         smooth
         duration={500} 
-        className="scroll-smooth mt-10 cursor-pointer w-12 h-12 rounded-full border-2 p-2 animate-bounce bg-black lg:block"
+        className="scroll-smooth mt-3 cursor-pointer w-12 h-12 rounded-full border-2 p-2 animate-bounce bg-black lg:block md:mt-10 lg:mt-2 xl:mt-10"
       >
         <img className="invert animate-pulse" src="/img/arrow.png" alt="" />
       </Link>

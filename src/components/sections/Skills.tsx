@@ -1,9 +1,9 @@
-import skills from '../mocks/skills.json';
-
+import skills from '../../mocks/skills.json';
+import { Element } from 'react-scroll';
 
 export const Skills = () => {
   return (
-    <article id='skills' className='px-4 min-h-screen flex flex-col justify-center gap-8 '>
+    <Element name='skills' className='px-4 min-h-screen flex flex-col justify-center gap-8 '>
       <h4 className="text-center text-5xl text-white font-bold">Skills</h4>
       <ul className='flex flex-wrap w-full gap-3 justify-center lg:gap-5 xl:gap-10 h-full '>
         {
@@ -24,6 +24,6 @@ export const Skills = () => {
           ))
         }
       </ul>
-    </article>
+    </Element>
   )
 }
