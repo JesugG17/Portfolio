@@ -1,19 +1,24 @@
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useState } from 'react';
 import { Link } from 'react-router-dom'
-import { Image } from "./Image";
 import { CodeIcon, DeployIcon } from "./Icons";
 
 export const ProjectCard: FC<Props> = ({ project }) => {
 
+  const [blur, setBlur] = useState(true);
  
 
   return (
     <li
       className="bg-primary relative w-3/4 max-h-[300px] overflow-hidden rounded-lg flex flex-col gap-4 md:w-1/4"
     >
-      <img className="w-full h-full rounded-lg" src={project.img} alt="" />
+      <img 
+     
+        className={`w-full h-full  rounded-lg ${ blur && 'blur'}`} src={project.img} alt="" 
+      />
       <div
-        className="absolute bg-black w-full h-full bg-opacity-25 flex flex-col justify-end gap-1"
+        onMouseEnter={() => setBlur(false)}
+        onMouseLeave={() => setBlur(true)}
+        className={`absolute transition-all duration-300 bg-black w-full h-full bg-opacity-25 flex flex-col justify-end gap-1 ${!blur && 'opacity-0'}`}
       >
         <div className="w-full">
           <h4 className="text-center font-bold">{project.name}</h4>
