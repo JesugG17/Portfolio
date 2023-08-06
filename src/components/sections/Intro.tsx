@@ -29,7 +29,7 @@ export const Intro = () => {
       <p className="text-center text-gray-400 lg:text-lg">
         Apassionate to solve problems and learn new things every day.
         <br></br>I ❤️ go out with my girlfriend, go to the gym, play videogames,
-        and drink cold coffee ☕
+        and drink cold coffee 🧊☕
       </p>
       <Link
         to="skills"

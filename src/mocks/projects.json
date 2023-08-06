@@ -1,23 +1,35 @@
 [
-    {
-        "name": "Tasks App",
-        "description": "Full stack application with ReactJS and Express, using Postgresql and deploying on Railway.",
-        "img": "img/projects/task-ui.png",
-        "code": "https://github.com/JesugG17/todolist-ui",
-        "deploy": "https://tasks-api-production-3564.up.railway.app/#/auth/login"
-    },
-    {
-        "name": "Country Quiz",
-        "description": "Frontend application fetching data from public API and using zustand for global state managment.",
-        "img": "/img/projects/country-quiz.png",
-        "code": "https://github.com/JesugG17/react-projects/tree/main/country-quiz",
-        "deploy": "https://country-quiz-g17.netlify.app/"
-    },
-    {
-        "name": "Rapid Jobs",
-        "description": "Frontend application fetching data from public API, filtering jobs, show job info, time lapsed beetween post, city and more.",
-        "img": "/img/projects/rapid-jobs.png",
-        "code": "https://github.com/JesugG17/react-projects/tree/main/jobs",
-        "deploy": "https://rapid-jobs-g17.netlify.app/jobs"
-    }
+  {
+    "name": "Tasks App",
+    "technologies": [
+        {"name": "TypeScript", "img": "/img/skills/typescript.svg"},
+        {"name": "React", "img": "/img/skills/react.svg"},
+        {"name": "NodeJS", "img": "/img/skills/nodejs.svg"},
+        {"name": "ExpressJS", "img": "/img/skills/express-js.svg"},
+        {"name": "Postgresql", "img": "/img/skills/postgresql.svg"},
+        {"name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg"}
+    ],
+    "description": "Full stack application with ReactJS and Express, using Postgresql and deploying on Railway.",
+    "fulldesc": "This app was my first full stack application. TaskApp/TodoApp is the most simple app that you could to build, so I decided to go to the next level, including a backend with auth module using JWT for authentication and google sign in, adding endpoints to upload files, for example change your profile photo, adding reseting password sending confirmation via email and beautiful UI.",
+    "img": "/img/projects/task-ui.png",
+    "otherImg": "/img/projects/taskapp-login.png",
+    "code": "https://github.com/JesugG17/todolist-ui",
+    "deploy": "https://tasks-api-production-3564.up.railway.app/#/auth/login"
+  },
+  {
+    "name": "Country Quiz",
+    "description": "Frontend application fetching data from public API and using zustand for global state managment.",
+    "img": "/img/projects/country-quiz.png",
+    "otherImg": "/img/projects/taskapp-login.png",
+    "code": "https://github.com/JesugG17/react-projects/tree/main/country-quiz",
+    "deploy": "https://country-quiz-g17.netlify.app/"
+  },
+  {
+    "name": "Rapid Jobs",
+    "description": "Frontend application fetching data from public API, filtering jobs, show job info, time lapsed beetween post, city and more.",
+    "img": "/img/projects/rapid-jobs.png",
+    "otherImg": "/img/projects/taskapp-login.png",
+    "code": "https://github.com/JesugG17/react-projects/tree/main/jobs",
+    "deploy": "https://rapid-jobs-g17.netlify.app/jobs"
+  }
 ]

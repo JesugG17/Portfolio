@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { findProjectByName } from '../utils/findProjectByName';
 import { BackArrow } from '../components/Icons';
 import { SocialMediaButton } from '../components/SocialMediaButton';
+import { Technologies } from '../components/Technologies';
 
 
 export const ProjectPage = () => {
@@ -33,19 +34,34 @@ export const ProjectPage = () => {
           Back to home
         </Link>
       </div>
-      <div className='flex flex-col gap-4'>
+      <div className='flex flex-col gap-6'>
         <h4 className='text-4xl font-bold'>{project?.name}</h4>
         <p className='opacity-40'>{project.description}</p>
+        <Technologies project={project}/>
       </div>
       <ul className='flex flex-col items-center gap-3'>
         {
           socialMediaItems.map( sociaMediaItem => (
-            <SocialMediaButton 
+            <SocialMediaButton
+              key={sociaMediaItem.name} 
               socialMediaItem={ sociaMediaItem }
             />
           ))
         }
       </ul>
+      <div className='flex flex-col gap-3'>
+        <img
+          className='rounded-lg object-cover' 
+          src={project.otherImg} 
+          alt={`${project.name} photo`} 
+        />
+        <p>{project.fulldesc}</p>
+      </div>
+      <img
+          className='rounded-lg object-cover' 
+          src={project.img} 
+          alt={`${project.name} photo`} 
+        />
     </article>
   )
 }
