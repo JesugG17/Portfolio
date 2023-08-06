@@ -22,7 +22,8 @@ export const Intro = () => {
         {socialMedias.map((socialMedia) => (
           <SocialMediaButton
             key={socialMedia.name} 
-            socialMediaItem={socialMedia} 
+            socialMediaItem={socialMedia}
+            className="bg-primary px-6 py-2 w-4/5 rounded-full cursor-pointer hover:scale-105 hover:brightness-105 transition-all duration-200 lg:w-48" 
           />
         ))}
       </ul>

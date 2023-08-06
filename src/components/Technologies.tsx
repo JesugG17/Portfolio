@@ -8,7 +8,7 @@ export const Technologies: FC<Props> = ({ project }) => {
            {
             project.technologies.map( technology => (
                 <li
-                    className='flex gap-2 max-w-xl p-2 rounded-md bg-black border-2'
+                    className='flex gap-2 p-2 rounded-md bg-black border-2'
                     key={technology.name}
                 >
                     <img

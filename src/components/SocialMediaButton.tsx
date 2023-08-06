@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { SocialMedia } from "../types/socialMedia.interface";
 
-export const SocialMediaButton: FC<Props> = ({ socialMediaItem }) => {
+export const SocialMediaButton: FC<Props> = ({ socialMediaItem, className }) => {
   return (
     <li
-      className="bg-primary px-6 py-2 w-4/5 rounded-full cursor-pointer hover:scale-105 hover:brightness-105 transition-all duration-200 lg:w-48"
+      className={className}
     >
       <a
         download="cv-gastelum"
@@ -25,4 +25,5 @@ export const SocialMediaButton: FC<Props> = ({ socialMediaItem }) => {
 
 type Props = {
   socialMediaItem: SocialMedia;
+  className: string;
 };

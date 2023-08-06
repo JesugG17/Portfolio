@@ -10,7 +10,7 @@
         {"name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg"}
     ],
     "description": "Full stack application with ReactJS and Express, using Postgresql and deploying on Railway.",
-    "fulldesc": "This app was my first full stack application. TaskApp/TodoApp is the most simple app that you could to build, so I decided to go to the next level, including a backend with auth module using JWT for authentication and google sign in, adding endpoints to upload files, for example change your profile photo, adding reseting password sending confirmation via email and beautiful UI.",
+    "fulldesc": "This app was my first full stack application. TaskApp/TodoApp is the most common app that you could to build, so I decided to go to the next level, including a backend with auth module using JWT for authentication and google sign in, adding endpoints to upload files, for example change your profile photo, adding reseting password sending confirmation via email and beautiful UI.",
     "img": "/img/projects/task-ui.png",
     "otherImg": "/img/projects/taskapp-login.png",
     "code": "https://github.com/JesugG17/todolist-ui",
