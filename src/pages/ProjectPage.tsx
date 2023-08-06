@@ -61,12 +61,12 @@ export const ProjectPage = () => {
         <p className='opacity-60'>{project.fulldesc}</p>
         <div className='flex flex-col gap-3 md:flex-row md:justify-between lg:mt-5'>
           <img
-            className='rounded-xl object-cover md:w-2/5 lg:w-1/2 hover:scale-110 transition-all duration-200' 
+            className='rounded-xl object-cover md:w-2/5 lg:w-1/2 hover:scale-110 hover:shadow-lg transition-all duration-200' 
             src={project.otherImg} 
             alt={`${project.name} photo`} 
           />
           <img
-              className='rounded-xl object-cover md:w-2/5 lg:w-1/2 hover:scale-110 transition-all duration-200' 
+              className='rounded-xl object-cover md:w-2/5 lg:w-1/2 hover:scale-110 hover:shadow-lg transition-all duration-200' 
               src={project.img} 
               alt={`${project.name} photo`} 
             />

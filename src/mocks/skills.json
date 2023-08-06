@@ -24,6 +24,10 @@
         "logo": "/img/skills/react.svg"
     },
     {
+        "name": "Redux",
+        "logo": "/img/skills/redux.svg"
+    },
+    {
         "name": "NodeJS",
         "logo": "/img/skills/nodejs.svg"
     },

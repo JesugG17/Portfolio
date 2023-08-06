@@ -18,17 +18,26 @@
   },
   {
     "name": "Country Quiz",
+    "technologies": [
+        {"name": "React", "img": "/img/skills/react.svg"},
+        {"name": "CSS", "img": "/img/skills/css3.svg"},
+        {"name": "Zustand", "img": "/img/skills/react.svg"}
+    ],
     "description": "Frontend application fetching data from public API and using zustand for global state managment.",
     "img": "/img/projects/country-quiz.png",
-    "otherImg": "/img/projects/taskapp-login.png",
+    "otherImg": "/img/projects/country-quiz2.png",
     "code": "https://github.com/JesugG17/react-projects/tree/main/country-quiz",
     "deploy": "https://country-quiz-g17.netlify.app/"
   },
   {
     "name": "Rapid Jobs",
+    "technologies": [
+        {"name": "React", "img": "/img/skills/react.svg"},
+        {"name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg"}
+    ],
     "description": "Frontend application fetching data from public API, filtering jobs, show job info, time lapsed beetween post, city and more.",
     "img": "/img/projects/rapid-jobs.png",
-    "otherImg": "/img/projects/taskapp-login.png",
+    "otherImg": "/img/projects/rapid-jobs2.png",
     "code": "https://github.com/JesugG17/react-projects/tree/main/jobs",
     "deploy": "https://rapid-jobs-g17.netlify.app/jobs"
   }

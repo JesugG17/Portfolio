@@ -4,7 +4,7 @@ import { Project } from '../types/project.type';
 export const Technologies: FC<Props> = ({ project }) => {
   return (
     <div>
-        <ul className='w-full flex gap-4 flex-wrap justify-center'>
+        <ul className='w-full flex gap-4 flex-wrap'>
            {
             project.technologies.map( technology => (
                 <li
