@@ -4,20 +4,23 @@
         "shortView": "Full stack application",
         "description": "Full stack application with ReactJS and Express, using Postgresql and deploying on Railway.",
         "img": "img/projects/task-ui.png",
-        "hoverImg": "img/projects/task-ui.png"
+        "code": "https://github.com/JesugG17/todolist-ui",
+        "deploy": "https://tasks-api-production-3564.up.railway.app/#/auth/login"
     },
     {
         "name": "Country Quiz",
         "shortView": "Frontend Application",
         "description": "Frontend application fetching data from public API and using zustand for global state managment.",
-        "img": "/img/test.jpg",
-        "hoverImg": "no-one"
+        "img": "/img/projects/country-quiz.png",
+        "code": "https://github.com/JesugG17/react-projects/tree/main/country-quiz",
+        "deploy": "https://country-quiz-g17.netlify.app/"
     },
     {
         "name": "Rapid Jobs",
         "shortView": "Frontend Application",
         "description": "Frontend application fetching data from public API, filtering jobs, show job info, time lapsed beetween post, city and more.",
-        "img": "/img/test.jpg",
-        "hoverImg": "no-one"
+        "img": "/img/projects/rapid-jobs.png",
+        "code": "https://github.com/JesugG17/react-projects/tree/main/jobs",
+        "deploy": "https://rapid-jobs-g17.netlify.app/jobs"
     }
 ]
