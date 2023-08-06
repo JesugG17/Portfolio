@@ -32,7 +32,7 @@ export const Intro = () => {
         <br></br>I ❤️ go out with my girlfriend, go to the gym, play videogames,
         and drink cold coffee 🧊☕
       </p>
-      <Link
+      {/* <Link
         to="skills"
         onClick={() => console.log("click")}
         smooth
@@ -40,7 +40,7 @@ export const Intro = () => {
         className="scroll-smooth mt-3 cursor-pointer w-12 h-12 rounded-full border-2 p-2 animate-bounce bg-black lg:block md:mt-10 lg:mt-2 xl:mt-10"
       >
         <img className="invert animate-pulse" src="/img/arrow.png" alt="" />
-      </Link>
+      </Link> */}
     </article>
   );
 };
