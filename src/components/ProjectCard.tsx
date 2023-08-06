@@ -9,10 +9,10 @@ export const ProjectCard: FC<Props> = ({ project }) => {
 
   return (
     <li
-      className="bg-primary relative w-3/4 max-h-[300px] overflow-hidden rounded-lg flex flex-col gap-4 md:w-2/5"
+      className="bg-primary relative w-3/4 max-h-[300px] overflow-hidden rounded-lg flex flex-col gap-4 "
     >
       <img 
-        className={`w-full h-full object-cover  rounded-lg ${ blur && 'blur'}`} src={project.img} alt="" 
+        className={`w-full h-full object-cover rounded-lg ${ blur && 'blur'}`} src={project.img} alt="" 
       />
       <div
         onMouseEnter={() => setBlur(false)}

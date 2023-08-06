@@ -4,7 +4,7 @@ import socialMedias from "../../mocks/socialMedia.json";
 
 export const Intro = () => {
   return (
-    <article className="flex min-h-screen flex-col items-center gap-3 text-white lg:gap-8">
+    <article className="flex min-h-screen  flex-col items-center gap-3 text-white lg:gap-8 md:w-2/4">
       <img
         className="h-32 w-32 rounded-full object-cover lg:w-48 lg:h-48"
         src="/img/photo.jpg"
@@ -25,9 +25,9 @@ export const Intro = () => {
         ))}
       </ul>
       <p className="text-center text-gray-400 lg:text-lg">
-        Apassionate to solve problems and to learn new things every day,
-        <br></br> 
-        I work with React, Typescript, Express, Tailwind
+        Apassionate to solve problems and learn new things every day.
+        <br></br>
+        I ❤️ go out with my girlfriend, go to the gym, play videogames, and drink cold coffee ☕
       </p>
       <Link 
         to="skills"

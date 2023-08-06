@@ -5,11 +5,11 @@ export const HomePage = () => {
   return (
     <>
       <Intro />
-      <hr/>
+      {/* <hr className="h-[10px] bg-primary border-0 rounded-lg"/> */}
       <Skills />
-      <hr/>
+      {/* <hr className="h-[10px] bg-primary border-0 rounded-lg"/> */}
       <Projects />
-      <hr/>
+      {/* <hr className="h-[10px] bg-primary border-0 rounded-lg"/> */}
       <Contact />
     </>
   )
