@@ -1,5 +1,6 @@
 import { Route, Routes, Navigate } from "react-router";
 import { ContactPage, HomePage, ProjectPage } from "../pages";
+
 export const AppRouter = () => {
   return (
     <Routes>

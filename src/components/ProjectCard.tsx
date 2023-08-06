@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import { Link } from 'react-router-dom'
 import { CodeIcon, DeployIcon } from "./Icons";
+import { Project } from '../types/project.type';
 
 export const ProjectCard: FC<Props> = ({ project }) => {
 
@@ -42,11 +43,5 @@ export const ProjectCard: FC<Props> = ({ project }) => {
 };
 
 type Props = {
-  project: { 
-    name: string, 
-    description: string, 
-    img: string,
-    code: string;
-    deploy: string;
-  }
+  project: Project 
 }
