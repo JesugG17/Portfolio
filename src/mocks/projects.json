@@ -1,7 +1,6 @@
 [
     {
         "name": "Tasks App",
-        "shortView": "Full stack application",
         "description": "Full stack application with ReactJS and Express, using Postgresql and deploying on Railway.",
         "img": "img/projects/task-ui.png",
         "code": "https://github.com/JesugG17/todolist-ui",
@@ -9,7 +8,6 @@
     },
     {
         "name": "Country Quiz",
-        "shortView": "Frontend Application",
         "description": "Frontend application fetching data from public API and using zustand for global state managment.",
         "img": "/img/projects/country-quiz.png",
         "code": "https://github.com/JesugG17/react-projects/tree/main/country-quiz",
@@ -17,7 +15,6 @@
     },
     {
         "name": "Rapid Jobs",
-        "shortView": "Frontend Application",
         "description": "Frontend application fetching data from public API, filtering jobs, show job info, time lapsed beetween post, city and more.",
         "img": "/img/projects/rapid-jobs.png",
         "code": "https://github.com/JesugG17/react-projects/tree/main/jobs",

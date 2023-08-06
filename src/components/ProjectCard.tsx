@@ -27,7 +27,7 @@ export const ProjectCard: FC<Props> = ({ project }) => {
             </div>
             <Link
               className="hover:brightness-125 transition-all duration-200"
-              to={`/project/${project.name}`}
+              to={`/project/${project.name.replace(" ", "")}`}
             >
               Details
             </Link>
@@ -44,7 +44,6 @@ export const ProjectCard: FC<Props> = ({ project }) => {
 type Props = {
   project: { 
     name: string, 
-    shortView: string, 
     description: string, 
     img: string,
     code: string;

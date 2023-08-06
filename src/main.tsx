@@ -5,7 +5,7 @@ import { AppRouter } from './router/AppRouter'
 
 import './index.css'
 
-import { IS_DEVELOPMENT } from './utils/isDevelopment'
+import { IS_DEVELOPMENT } from './constants/isDevelopment'
 
 const Router = ({children}: {children: React.ReactNode}) => {
   return (
