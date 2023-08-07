@@ -13,7 +13,7 @@ export const Skills = () => {
         {skills.map((skill) => (
           <li
             key={skill.name}
-            className="flex flex-col justify-between items-center gap-4 bg-black bg-opacity-30 rounded-full shadow p-2 w-2/5 hover:scale-105 transition-all hover:ease-in duration-200 cursor-pointer lg:w-1/4 lg:p-4"
+            className="flex flex-col justify-between items-center gap-4 bg-black bg-opacity-30 rounded-lg shadow p-2 w-2/5 hover:scale-105 transition-all hover:ease-in duration-200 cursor-pointer lg:w-1/4 lg:p-4"
           >
             <img
               className={`w-3/4 ${skill.name === "Express" ? "invert" : ""} ${

@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import { Title } from "../Title";
 
 export const Contact = () => {
   return (
     <footer className="w-full min-h-96 p-2 flex flex-col gap-7 md:w-2/4">
-      <Title title="Contact" />
       <h5 className="text-center text-2xl text-white font-bold">
         Let´s work together
       </h5>
