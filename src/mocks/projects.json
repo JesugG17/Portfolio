@@ -59,6 +59,6 @@
     "img": "/img/projects/journal.png",
     "otherImg": "/img/projects/journal2.png",
     "code": "https://github.com/JesugG17/journal-app",
-    "deploy": "https://journal-app-g17.vercel.app/auth/login"
+    "deploy": "https://journal-app-g17.vercel.app"
   }
 ]
