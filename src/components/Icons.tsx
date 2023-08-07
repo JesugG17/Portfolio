@@ -16,3 +16,9 @@ export const BackArrow = () => {
     <img className="w-5 h-5 invert" src="/img/previous.png" alt="BackArrow icon" />
   )
 }
+
+export const Cross = () => {
+  return (
+    <img className="w-6 h-6 invert" src="/img/cross.png" alt="Cross icon" />
+  )
+}

@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import { SocialMediaButton } from "../SocialMediaButton";
 import socialMedias from "../../mocks/socialMedia.json";
 
