@@ -4,9 +4,9 @@ import socialMedias from "../../mocks/socialMedia.json";
 
 export const Intro = () => {
   return (
-    <article className="flex h-3/4 flex-col items-center gap-1 text-white lg:gap-8 md:w-2/4 xl:gap-12">
+    <article className="flex h-screen justify-center flex-col items-center gap-10 text-white lg:gap-8 md:w-2/4 xl:gap-12">
       <img
-        className="h-32 w-32 rounded-full object-cover lg:w-48 lg:h-48"
+        className="h-40 w-40 rounded-full object-cover lg:w-48 lg:h-48"
         src="/img/photo.jpg"
         alt=""
       />

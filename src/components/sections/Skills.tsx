@@ -34,7 +34,7 @@ export const Skills = () => {
         <div className="flex gap-2">
           <div className="flex gap-2 items-center rounded-lg bg-black border-2 p-2">
             <img
-              className="w-8 h-8"
+              className="w-8 h-8 animate-pulse"
               src="/img/skills/nestjs.svg"
               alt="Nestjs logo"
             />
@@ -42,7 +42,7 @@ export const Skills = () => {
           </div>
           <div className="flex gap-2 items-center rounded-lg bg-black border-2 p-2">
             <img
-              className="w-8 h-8"
+              className="w-8 h-8 animate-pulse"
               src="/img/skills/nextjs.svg"
               alt="Nestjs logo"
             />
