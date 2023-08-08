@@ -55,7 +55,7 @@
       {"name": "Firebase", "img": "/img/skills/firebase.svg"}
     ],
     "description": "FullStack application, using firebase for database, login and register page, google sign in and operations CRUD over notes",
-    "fulldesc": "In progress",
+    "fulldesc": "This app is from 'React: De cero a experto (Hooks y MERN)' course by Fernando Herrera, this is a very interesting app that is built with redux and firabase, this is the first time i have use firebase for store and persist my data and is the first time with redux either. I learned a lot of things with this app, like: How to make properly a Login and Register page, how to use redux properly with async actions (using thunks) and the first time i have use MaterialUI for faster design and beautiful UI.",
     "img": "/img/projects/journal.png",
     "otherImg": "/img/projects/journal2.png",
     "code": "https://github.com/JesugG17/journal-app",

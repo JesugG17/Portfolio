@@ -10,16 +10,13 @@ import { useEffect } from 'react';
 export const ProjectPage = () => {
   
   const location =  useLocation();
+  
   useEffect(() => {
     window.scrollTo({top: 0});
-  }, [])
-
+  }, []);
 
   const projectName = location.pathname.split('/')[2];
   const project = findProjectByName(projectName);
-  
-
-
   const socialMediaItems = [
     {
       name: "View source code",

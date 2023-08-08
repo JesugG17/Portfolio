@@ -7,6 +7,7 @@ export const HomePage = () => {
   useEffect(() => {
     const posY = Number(localStorage.getItem('posY')) ?? 0;
     window.scrollTo({ top: posY });
+    localStorage.clear();
   }, []);
 
   return (
