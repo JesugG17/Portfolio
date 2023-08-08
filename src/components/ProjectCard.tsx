@@ -27,6 +27,7 @@ export const ProjectCard: FC<Props> = ({ project }) => {
               <a target="_blank" href={project.code}>Code</a>
             </div>
             <Link
+              onClick={() => localStorage.setItem('posY', window.scrollY.toString())}
               className="hover:brightness-125 transition-all duration-200"
               to={`/project/${project.name.replace(" ", "")}`}
             >
