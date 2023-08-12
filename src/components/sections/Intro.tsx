@@ -14,7 +14,7 @@ export const Intro = () => {
           Hi, I´m Jesus Gastelum
         </h2>
         <p className="opacity-60 text-xl text-center lg:text-2xl">
-          Web develoepr
+          Web developer
         </p>
       </div>
       <ul className="w-full mt-5 flex flex-col items-center gap-3 lg:flex-row lg:justify-center ">
