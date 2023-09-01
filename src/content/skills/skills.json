@@ -1,46 +1,46 @@
 [
-    {
-        "name": "HTML",
-        "logo": "/img/skills/html.svg"
-    },
-    {
-        "name": "CSS",
-        "logo": "/img/skills/css3.svg"
-    },
-    {
-        "name": "TailwindCSS",
-        "logo": "/img/skills/tailwindcss.svg"
-    },
-    {
-        "name": "JavaScript",
-        "logo": "/img/skills/javascript.svg"
-    },
-    {
-        "name": "TypeScript",
-        "logo": "/img/skills/typescript.svg"
-    },
-    {
-        "name": "React",
-        "logo": "/img/skills/react.svg"
-    },
-    {
-        "name": "Redux",
-        "logo": "/img/skills/redux.svg"
-    },
-    {
-        "name": "NodeJS",
-        "logo": "/img/skills/nodejs.svg"
-    },
-    {
-        "name": "Express",
-        "logo": "/img/skills/express-js.svg"
-    },
-    {
-        "name": "Postgresql",
-        "logo": "/img/skills/postgresql.svg"
-    },
-    {
-        "name": "Mongo",
-        "logo": "/img/skills/mongodb.svg"
-    }
+  {
+    "name": "HTML",
+    "logo": "/img/skills/html.svg"
+  },
+  {
+    "name": "CSS",
+    "logo": "/img/skills/css3.svg"
+  },
+  {
+    "name": "TailwindCSS",
+    "logo": "/img/skills/tailwindcss.svg"
+  },
+  {
+    "name": "JavaScript",
+    "logo": "/img/skills/javascript.svg"
+  },
+  {
+    "name": "TypeScript",
+    "logo": "/img/skills/typescript.svg"
+  },
+  {
+    "name": "React",
+    "logo": "/img/skills/react.svg"
+  },
+  {
+    "name": "Redux",
+    "logo": "/img/skills/redux.svg"
+  },
+  {
+    "name": "NodeJS",
+    "logo": "/img/skills/nodejs.svg"
+  },
+  {
+    "name": "Express",
+    "logo": "/img/skills/express-js.svg"
+  },
+  {
+    "name": "Postgresql",
+    "logo": "/img/skills/postgresql.svg"
+  },
+  {
+    "name": "Mongo",
+    "logo": "/img/skills/mongodb.svg"
+  }
 ]
