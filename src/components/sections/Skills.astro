@@ -1,0 +1,25 @@
+---
+import { getCollection, getEntry } from "astro:content";
+
+type Skill = {
+    name: string;
+    logo: string;
+}
+
+const skillsCollection = await getCollection('skills');
+const skills = skillsCollection.map( skill => skill.data as Skill).flat();
+---
+
+<section class="h-screen text-white">
+    <ul class="flex flex-wrap gap-4">
+        {
+            skills.map(skill => (
+                <li class="flex flex-col items-center gap-2">
+                    <img class={`${skill.name === "Express" ? 'invert' : ''} w-12`} src={skill.logo} alt="">
+                    <strong>{skill.name}</strong>
+                </li>
+            ))
+            
+        }
+    </ul>
+</section> 
