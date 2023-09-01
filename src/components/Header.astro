@@ -4,16 +4,16 @@ const socialMediaCollection = await getCollection("social-media");
 const socialMediaInfo = socialMediaCollection.flatMap(socialMedia => socialMedia.data);
 ---
 
-<nav class="flex justify-center w-full items-center absolute top-0 right-0 p-3 text-white">
+<header class="flex justify-center w-full items-center absolute top-0 right-0 p-3 text-white">
    <ul class="flex gap-4">
         {
          socialMediaInfo.map(item => (
             <li class="flex items-center gap-2">
-               <img class="invert w-4" src={item.img} alt="" />
+               <img class="invert w-4 md:w-6" src={item.img} alt="" />
                <a download="cv-gastelum" href={item.link} target="_blank">{item.name}</a>
             </li>
          ))
 
         }
    </ul>
-</nav>
+</header>
