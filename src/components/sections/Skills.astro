@@ -5,17 +5,16 @@ const skillsCollection = await getCollection('skills');
 const skills = skillsCollection.map( skill => skill.data).flat();
 ---
 
-<section class="h-screen text-white">
-    <h4 class="text-center text-4xl">Skills</h4>
-    <ul class="flex flex-wrap gap-4">
+<section class="text-white flex flex-col gap-5">
+    <h3 class="text-black text-center font-bold text-xl">Skills</h3>
+    <ul class="flex justify-center flex-wrap gap-1">
         {
-            skills.map(skill => (
-                <li class="flex flex-col items-center gap-2">
-                    <img class={`${skill.name === "Express" ? 'invert' : ''} w-12`} src={skill.logo} alt="" />
-                    <strong>{skill.name}</strong>
+            skills.map(tech => (
+                <li class="bg-black flex gap-1 border-2 rounded-md p-1 text-white items-center w-16">
+                    <img  class={`${tech.name === "Express" ? "invert" : ""} w-4`} src={tech.logo} alt="" />
+                    <strong class="text-[8px]">{tech.name}</strong>
                 </li>
             ))
-            
         }
     </ul>
 </section> 

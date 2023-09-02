@@ -4,7 +4,7 @@ const socialMediaCollection = await getCollection("social-media");
 const socialMediaInfo = socialMediaCollection.flatMap(socialMedia => socialMedia.data);
 ---
 
-<header class="flex justify-center w-full items-center absolute top-0 right-0 p-3 text-white">
+<header class="flex justify-center z-50 w-full items-center absolute top-0 right-0 p-3 text-white">
    <ul class="flex gap-4">
         {
          socialMediaInfo.map(item => (
