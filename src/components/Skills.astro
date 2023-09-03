@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+
+const skillsCollection = await getCollection('skills');
+const skills = skillsCollection.map( skill => skill.data).flat();
+---
+
+<section class="text-white flex flex-col gap-3">
+    <h3 class="text-blue-600 underline text-center font-bold text-xl md:text-2xl lg:text-3xl">Skills</h3>
+    <ul class="flex justify-center flex-wrap gap-1 mb-5">
+        {
+            skills.map(tech => (
+                <li class="bg-black flex gap-1 border-2 rounded-md py-2 px-1 text-white items-center w-fit lg:px-2">
+                    <img  class={`${tech.name === "Express" ? "invert" : ""} w-4 lg:w-8`} src={tech.logo} alt="" />
+                    <strong class="text-[10px] md:text-base lg:text-lg">{tech.name}</strong>
+                </li>
+            ))
+        }
+    </ul>
+</section> 

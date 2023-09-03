@@ -6,19 +6,28 @@ const projectsColletion = await getCollection('projects');
 const projects = projectsColletion.map(project => project.data).flat();
 
 ---
-<section class="min-h-screen bg-background-skills flex flex-col gap-5 text-white mb-10">
+<section class="min-h-screen bg-background-skills flex flex-col gap-5 text-white relative">
     <h2 class="text-center text-4xl font-bold">Projects</h2>
-    <ul class="flex flex-col items-center w-full gap-5">
+    <ul class="grid grid-cols-1 place-items-center w-full gap-5 md:grid-cols-2 mb-20 xl:grid-cols-3">
         {
             projects.map(project => (
-                <li class="flex relative border-2 rounded w-4/5 flex-col bg-background">
+                <li class="flex relative border-2 rounded w-4/5 flex-col bg-background shadow-lg h-[150px] md:h-[170px] lg:h-[200px] xl:h[250px]">
                     <TechnologiesUsed technologies={project.technologies} />
-                    <picture class="border-b-2">
-                        <img class="rounded-t" src={project.img} alt={`${project.name} image`} />
+                    <picture class="overflow-hidden">
+                        <img class="rounded-t hover:scale-125 transition-all duration-200" src={project.img} alt={`${project.name} image`} />
                     </picture>
-                    <a class="text-center text-black" href={project.deploy} target="_blank">{project.name}</a>
+                    <article class="flex w-full text-white justify-between bg-black p-2">
+                        <a class="hover:scale-105 transition-all duration-200" href={project.code} target="_blank">
+                            <img class="invert w-5" src="/img/coding.png" alt="Coding icon">
+                        </a>
+                        <strong>{project.name}</strong>
+                        <a class="hover:scale-105 transition-all duration-200" href={project.deploy} target="_blank">
+                            <img class="invert w-5" src="/img/deploy.png" alt="Coding icon">
+                        </a>
+                    </article>
                 </li>
             ))
         }
     </ul>
+    <svg class="absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#000000" fill-opacity="1" d="M0,224L1440,64L1440,320L0,320Z"></path></svg>
 </section>
