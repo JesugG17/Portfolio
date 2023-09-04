@@ -10,7 +10,7 @@ interface Props {
 const { project } = Astro.props;
 ---
 
-<li class="flex relative border-2 rounded w-4/5 flex-col bg-background shadow-lg h-[150px] md:h-[170px] lg:h-[200px] xl:h[250px]">
+<li class="flex relative border-2 rounded w-4/5 flex-col bg-background shadow-lg h-[150px] md:h-[170px] lg:h-[200px] xl:h[250px] projectItem">
     <TechnologiesUsed technologies={project.technologies} />
     <picture class="overflow-hidden">
         <img class="rounded-t hover:scale-125 transition-all duration-200" src={project.img} alt={`${project.name} image`} />
@@ -25,3 +25,4 @@ const { project } = Astro.props;
         </a>
     </article>
 </li>
+     

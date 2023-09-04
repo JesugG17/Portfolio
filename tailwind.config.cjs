@@ -8,7 +8,7 @@ module.exports = {
         "background-skills": "#273036"
       },
       backgroundImage: {
-        hero: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7204131652661064) 100%), url(/img/hero.jpg)',
+        hero: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7204131652661064) 100%), url(/img/hero2.jpg)',
       },
     },
   },
