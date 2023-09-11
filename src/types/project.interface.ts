@@ -3,9 +3,6 @@ export interface Project {
     name: string;
     technologies: Technology[];
     img: string;
-    description: string;
-    fulldesc: string;
-    otherImg: string;
     deploy: string;
 }
 

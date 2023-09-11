@@ -9,10 +9,7 @@
       { "name": "Postgresql", "img": "/img/skills/postgresql.svg" },
       { "name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg" }
     ],
-    "description": "Full stack application with ReactJS and Express, using Postgresql and deploying on Railway.",
-    "fulldesc": "This app was my first full stack application. TaskApp/TodoApp is the most common app that you could to build, so I decided to go to the next level, including a backend with auth module using JWT for authentication and google sign in, adding endpoints to upload files, for example change your profile photo, adding reseting password sending confirmation via email and beautiful UI.",
     "img": "/img/work/task-ui.png",
-    "otherImg": "/img/work/taskapp-login.png",
     "code": "https://github.com/JesugG17/todolist-ui",
     "deploy": "https://tasks-api-production-3564.up.railway.app/#/auth/login"
   },
@@ -24,10 +21,7 @@
       { "name": "CSS", "img": "/img/skills/css3.svg" },
       { "name": "Zustand", "img": "/img/skills/react.svg" }
     ],
-    "description": "Frontend application fetching data from public API and using zustand for global state managment.",
-    "fulldesc": "This app is from devchallenges, this is a interesting app because you have two options, simple quiz or flag quiz, althought I added one more thing, select the region for the answer, if none is selected, the quiz is universal, can throw questions of any country. I used zustand for first time with this project and I love it, it´s easier to manage than redux.",
     "img": "/img/work/country-quiz.png",
-    "otherImg": "/img/work/country-quiz2.png",
     "code": "https://github.com/JesugG17/react-projects/tree/main/country-quiz",
     "deploy": "https://country-quiz-g17.netlify.app/"
   },
@@ -38,10 +32,7 @@
       { "name": "React", "img": "/img/skills/react.svg" },
       { "name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg" }
     ],
-    "description": "Frontend application fetching data from public API, filtering jobs, show job info, time lapsed beetween post, city and more.",
-    "fulldesc": "This app is from devchallenges, the purpose of the app is make a responsive design and fetch data from API, the harder thing of the app is all the filters that you must do, meaning that you must know or learn how to filter my multiple things.",
     "img": "/img/work/rapid-jobs.png",
-    "otherImg": "/img/work/rapid-jobs2.png",
     "code": "https://github.com/JesugG17/react-projects/tree/main/jobs",
     "deploy": "https://rapid-jobs-g17.netlify.app/jobs"
   },
@@ -54,11 +45,19 @@
       { "name": "Redux", "img": "/img/skills/redux.svg" },
       { "name": "Firebase", "img": "/img/skills/firebase.svg" }
     ],
-    "description": "FullStack application, using firebase for database, login and register page, google sign in and operations CRUD over notes",
-    "fulldesc": "This app is from 'React: De cero a experto (Hooks y MERN)' course by Fernando Herrera, this is a very interesting app that is built with redux and firabase, this is the first time i have use firebase for store and persist my data and is the first time with redux either. I learned a lot of things with this app, like: How to make properly a Login and Register page, how to use redux properly with async actions (using thunks) and the first time i have use MaterialUI for faster design and beautiful UI.",
     "img": "/img/work/journal.png",
-    "otherImg": "/img/work/journal2.png",
     "code": "https://github.com/JesugG17/journal-app",
     "deploy": "https://journal-app-g17.vercel.app"
+  },
+  {
+    "name": "Rest Countries",
+    "technologies": [
+      { "name": "TypeScript", "img": "/img/skills/typescript.svg" },
+      { "name": "React", "img": "/img/skills/react.svg" },
+      { "name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg" }
+    ],
+    "img": "/img/work/rest-countries.jpg",
+    "code": "https://github.com/JesugG17/react-projects/tree/main/rest-countries",
+    "deploy": "https://rest-countries-g17.netlify.app/#/home"
   }
 ]

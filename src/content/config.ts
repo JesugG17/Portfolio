@@ -21,10 +21,7 @@ const projectsCollection = defineCollection({
           img: z.string(),
         })
       ),
-      description: z.string(),
-      fulldesc: z.string(),
       img: z.string(),
-      otherImg: z.string(),
       code: z.string(),
       deploy: z.string(),
     })
