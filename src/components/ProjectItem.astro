@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import type { Project } from "../types/project.interface"
 import TechnologiesUsed from "./TechnologiesUsed.astro";
 
@@ -15,7 +14,7 @@ console.log(project.img);
 <li class="flex relative border-2 rounded w-4/5 flex-col bg-background shadow-lg h-[150px] md:h-[170px] lg:h-[200px] xl:h[250px] projectItem">
     <TechnologiesUsed technologies={project.technologies} />
     <picture class="overflow-hidden">
-        <img src={project.img} alt={`${project.name} image`} class="rounded-t object-center hover:scale-125 transition-all duration-200" loading="lazy">
+        <img loading="lazy" src={project.img} alt={`${project.name} image`} class="rounded-t  hover:scale-125 transition-all duration-200" >
     </picture>
     <article class="flex w-full text-white justify-between bg-black p-2">
         <a class="hover:scale-105 transition-all duration-200" href={project.code} target="_blank">

@@ -19,10 +19,16 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{ title }</title>
 	</head>
-	<body class="bg-background h-screen">
+	<body class="bg-background">
 		<slot />
 	</body>
 </html>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+
+	});
+</script>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap');
