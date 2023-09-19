@@ -9,7 +9,7 @@
       { "name": "Postgresql", "img": "/img/skills/postgresql.svg" },
       { "name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg" }
     ],
-    "img": "/img/work/task-ui.png",
+    "img": "/img/work/task-ui.webp",
     "code": "https://github.com/JesugG17/todolist-ui",
     "deploy": "https://tasks-api-production-3564.up.railway.app/#/auth/login"
   },
@@ -21,7 +21,7 @@
       { "name": "CSS", "img": "/img/skills/css3.svg" },
       { "name": "Zustand", "img": "/img/skills/react.svg" }
     ],
-    "img": "/img/work/country-quiz.png",
+    "img": "/img/work/country-quiz.webp",
     "code": "https://github.com/JesugG17/react-projects/tree/main/country-quiz",
     "deploy": "https://country-quiz-g17.netlify.app/"
   },
@@ -32,7 +32,7 @@
       { "name": "React", "img": "/img/skills/react.svg" },
       { "name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg" }
     ],
-    "img": "/img/work/rapid-jobs.png",
+    "img": "/img/work/rapid-jobs.webp",
     "code": "https://github.com/JesugG17/react-projects/tree/main/jobs",
     "deploy": "https://rapid-jobs-g17.netlify.app/jobs"
   },
@@ -45,7 +45,7 @@
       { "name": "Redux", "img": "/img/skills/redux.svg" },
       { "name": "Firebase", "img": "/img/skills/firebase.svg" }
     ],
-    "img": "/img/work/journal.png",
+    "img": "/img/work/journal.webp",
     "code": "https://github.com/JesugG17/journal-app",
     "deploy": "https://journal-app-g17.vercel.app"
   },
@@ -56,7 +56,7 @@
       { "name": "React", "img": "/img/skills/react.svg" },
       { "name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg" }
     ],
-    "img": "/img/work/rest-countries.jpg",
+    "img": "/img/work/rest-countries.webp",
     "code": "https://github.com/JesugG17/react-projects/tree/main/rest-countries",
     "deploy": "https://rest-countries-g17.netlify.app/#/home"
   }
