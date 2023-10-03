@@ -7,7 +7,7 @@ const projects = projectsColletion.map(project => project.data).flat();
 
 ---
 <section class="min-h-screen bg-background-skills flex flex-col gap-5 text-white relative">
-    <h2 class="text-center text-4xl font-bold">Projects</h2>
+    <h2 class="hidden text-center text-4xl font-bold projects animate__animated animate__fadeInUp animation__delay-4s">Projects</h2>
     <ul class="grid grid-cols-1 place-items-center w-full gap-5 md:grid-cols-2 mb-20 xl:grid-cols-3">
         {
             projects.map(project => (

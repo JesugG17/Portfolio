@@ -1,39 +1,117 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
-
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Jesus Gastelum portfolio">
-		<meta name="author" content="Jesus Gastelum" />
-		<meta name="keywords" content="portfolio, jesus gastelum, jesus chaparro"/>
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png+xml" href="/img/coding-white.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{ title }</title>
-	</head>
-	<body class="bg-background">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Jesus Gastelum portfolio"
+    />
+    <meta
+      name="author"
+      content="Jesus Gastelum"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, jesus gastelum, jesus chaparro"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <link
+      rel="icon"
+      type="image/png+xml"
+      href="/img/coding-white.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <title>{title}</title>
+  </head>
+  <body class="bg-background">
+    <slot />
+  </body>
 </html>
 
 <script>
-	document.addEventListener('DOMContentLoaded', () => {
+
+	const aboutMeH2 = document.querySelector('.aboutme');
+	const projectH2 = document.querySelector('.projects');
+
+	const cardInfo = document.querySelector('.card__info');
+	const skillsContainer = document.querySelector('.skills');
+	const projectsItems = document.querySelectorAll('.project__item');
+
+
+	/*
+		I don´t know how to apply correctly this type of animations,
+		so the unique form that I thougth is the one below. Yes, it is
+		dirty code...
+	*/
+	window.addEventListener('scroll', () => {
+
+		const scrollY = window.scrollY;
+
+		console.log(scrollY);
+
+		if (scrollY > 250) {
+			aboutMeH2?.classList.remove('hidden');
+			cardInfo?.classList.remove('hidden')
+			cardInfo?.classList.add('flex');
+		}
+
+		if (scrollY > 500) {
+			skillsContainer?.classList.remove('opacity-0');
+			skillsContainer?.classList.add('animate__animated', 'animate__fadeInUp', 'animation__delay-4s');
+		}
+
+		if (scrollY > 900) {
+			projectH2?.classList.remove('hidden');
+
+			projectsItems[0].classList.remove('hidden');
+			projectsItems[0].classList.add('flex');
+		}
+
+		if (scrollY > 1000) {
+			projectsItems[1].classList.remove('hidden');
+			projectsItems[1].classList.add('flex');
+		}
+
+		if (scrollY > 1100) {
+			projectsItems[2].classList.remove('hidden');
+			projectsItems[2].classList.add('flex');
+		}
+
+		if (scrollY > 1200) {
+			projectsItems[3].classList.remove('hidden');
+			projectsItems[3].classList.add('flex');
+		}
+
+		if (scrollY > 1300) {
+			projectsItems[4].classList.remove('hidden');
+			projectsItems[4].classList.add('flex');
+		}
 
 	});
+
 </script>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap');
-	body {
-		font-family: 'Roboto Condensed', 'Arial';
-	}
+  @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap');
+  body {
+    font-family: 'Roboto Condensed', 'Arial';
+  }
 </style>
-
