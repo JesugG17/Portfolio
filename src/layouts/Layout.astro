@@ -69,12 +69,6 @@ const { title } = Astro.props;
 	window.addEventListener('scroll', () => {
 
 		const scrollY = window.scrollY;
-		console.log(scrollY);
-
-		if (scrollY < 250)  {
-			arrowTop?.classList.add('hidden');
-			arrowTop?.classList.remove('animate__animated',  'animate__fadeInLeft');
-		}
 
 		if (scrollY > 250) {
 			aboutMeH2?.classList.remove('hidden');
@@ -85,8 +79,6 @@ const { title } = Astro.props;
 		if (scrollY > 500) {
 			skillsContainer?.classList.remove('opacity-0');
 			skillsContainer?.classList.add('animate__animated', 'animate__fadeInUp', 'animation__delay-4s');
-			arrowTop?.classList.remove('hidden');
-			arrowTop?.classList.add('animate__animated',  'animate__fadeInLeft');
 		}
 
 		if (scrollY > 900) {
