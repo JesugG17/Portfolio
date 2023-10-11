@@ -55,6 +55,11 @@ const { title } = Astro.props;
 	const skillsContainer = document.querySelector('.skills');
 	const projectsItems = document.querySelectorAll('.project__item');
 
+	const arrowTop = document.querySelector('.scrollTop');
+
+	arrowTop?.addEventListener('click', () => {
+		window.scrollTo({top: 0});
+	})
 
 	/*
 		I don´t know how to apply correctly this type of animations,
@@ -64,6 +69,12 @@ const { title } = Astro.props;
 	window.addEventListener('scroll', () => {
 
 		const scrollY = window.scrollY;
+		console.log(scrollY);
+
+		if (scrollY < 250)  {
+			arrowTop?.classList.add('hidden');
+			arrowTop?.classList.remove('animate__animated',  'animate__fadeInLeft');
+		}
 
 		if (scrollY > 250) {
 			aboutMeH2?.classList.remove('hidden');
@@ -74,6 +85,8 @@ const { title } = Astro.props;
 		if (scrollY > 500) {
 			skillsContainer?.classList.remove('opacity-0');
 			skillsContainer?.classList.add('animate__animated', 'animate__fadeInUp', 'animation__delay-4s');
+			arrowTop?.classList.remove('hidden');
+			arrowTop?.classList.add('animate__animated',  'animate__fadeInLeft');
 		}
 
 		if (scrollY > 900) {
@@ -107,8 +120,12 @@ const { title } = Astro.props;
 
 </script>
 
-<style>
+<style global>
   @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+  html {
+	scroll-behavior: smooth;
+  }
   body {
     font-family: 'Roboto Condensed', 'Arial';
   }
