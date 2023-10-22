@@ -42,5 +42,9 @@
   {
     "name": "Mongo",
     "logo": "/img/skills/mongodb.svg"
+  },
+  {
+    "name": "VueJS",
+    "logo": "/img/skills/vue.png"
   }
 ]
