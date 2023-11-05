@@ -14,29 +14,6 @@
     "deploy": "https://tasks-api-production-3564.up.railway.app/#/auth/login"
   },
   {
-    "name": "Country Quiz",
-    "technologies": [
-      { "name": "TypeScript", "img": "/img/skills/typescript.svg" },
-      { "name": "React", "img": "/img/skills/react.svg" },
-      { "name": "CSS", "img": "/img/skills/css3.svg" },
-      { "name": "Zustand", "img": "/img/skills/react.svg" }
-    ],
-    "img": "/img/work/country-quiz.webp",
-    "code": "https://github.com/JesugG17/react-projects/tree/main/country-quiz",
-    "deploy": "https://country-quiz-g17.netlify.app/"
-  },
-  {
-    "name": "Rapid Jobs",
-    "technologies": [
-      { "name": "TypeScript", "img": "/img/skills/typescript.svg" },
-      { "name": "React", "img": "/img/skills/react.svg" },
-      { "name": "TailwindCSS", "img": "/img/skills/tailwindcss.svg" }
-    ],
-    "img": "/img/work/rapid-jobs.webp",
-    "code": "https://github.com/JesugG17/react-projects/tree/main/jobs",
-    "deploy": "https://rapid-jobs-g17.netlify.app/jobs"
-  },
-  {
     "name": "Journal App",
     "technologies": [
       { "name": "JavaScript", "img": "/img/skills/javascript.svg" },
