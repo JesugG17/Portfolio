@@ -9,7 +9,7 @@ interface Props {
 const { project } = Astro.props;
 ---
 
-<li class="hidden project__item relative border-2 rounded w-4/5 flex-col bg-background shadow-lg h-[150px] md:h-[170px] lg:h-[200px] xl:h[250px] projectItem animate__animated animate__fadeInUp animation__delay-4s">
+<li class="hidden project__item relative border-2 rounded w-4/5 flex-col bg-background shadow-lg h-[150px] md:h-[170px] lg:h-[200px] xl:h[250px] max-w-[400px] projectItem animate__animated animate__fadeInUp animation__delay-4s">
     <TechnologiesUsed technologies={project.technologies} />
     <picture class="overflow-hidden">
         <img loading="lazy" src={project.img} alt={`${project.name} image`} class="rounded-t  hover:scale-125 transition-all duration-200" >
