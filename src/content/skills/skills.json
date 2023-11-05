@@ -46,5 +46,9 @@
   {
     "name": "VueJS",
     "logo": "/img/skills/vue.png"
+  },
+  {
+    "name": "NestJS",
+    "logo": "/img/skills/nestjs.svg"
   }
 ]
