@@ -1,30 +1,48 @@
-
-<section class="bg-hero h-screen relative flex flex-col gap-3 px-2 justify-center items-center text-white">
-    <img class="absolute opacity-70 -z-10 object-cover w-full h-full" src="/img/background.jpg" alt="Hero image" />
-    <h2 class="animate__animated animate__fadeInLeft text-5xl bg-gradient-to-r text-center from-green-500 to-blue-500 font-bold text-transparent bg-clip-text md:text-6xl">
-        Jesus Gastelum
-    </h2>
-    <div class="opacity-0 transition-all duration-200 flex flex-col gap-2 items-center " id="description">
-        <h4 class="text-xl font-bold md:text-2xl">Web developer</h4>
-        <p class="text-center md:text-lg">Apassionate to face new challenges and learn new things every day</p>
-    </div>
-    <img class="absolute bottom-0 w-full hidden md:block" src="/img/wave-desktop.svg" alt="Wave svg desktop">
-    <img class="absolute bottom-0 w-full md:hidden" src="/img/wave-mobile.svg" alt="Wave svg mobile">
+<section
+  class="bg-hero h-screen relative flex flex-col gap-3 px-2 justify-center items-center text-white"
+>
+  <img
+    class="absolute opacity-70 -z-10 object-cover w-full h-full"
+    src="/img/background.jpg"
+    alt="Hero image"
+  />
+  <h2
+    class="animate__animated animate__fadeInLeft text-5xl bg-gradient-to-r text-center from-green-500 to-blue-500 font-bold text-transparent bg-clip-text md:text-6xl"
+  >
+    Jesus Gastelum
+  </h2>
+  <div
+    class="opacity-0 transition-all duration-200 flex flex-col gap-2 items-center"
+    id="description"
+  >
+    <h4 class="text-xl font-bold md:text-2xl">Web developer</h4>
+    <p class="text-center md:text-lg">
+      Passionate to face new challenges and learn new things every day
+    </p>
+  </div>
+  <img
+    class="absolute bottom-0 w-full hidden md:block"
+    src="/img/wave-desktop.svg"
+    alt="Wave svg desktop"
+  />
+  <img
+    class="absolute bottom-0 w-full md:hidden"
+    src="/img/wave-mobile.svg"
+    alt="Wave svg mobile"
+  />
 </section>
 
 <script>
+  const divDescription = document.getElementById('description');
+  const webDeveloper = document.querySelector('h4');
+  const description = document.querySelector('p');
 
-    const divDescription = document.getElementById('description');
-    const webDeveloper = document.querySelector('h4');
-    const description = document.querySelector('p');
-
-    window.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => {
-            divDescription?.classList.remove('opacity-0');
-            webDeveloper?.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-1s');
-            description?.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-2s');
-            console.log('hello');
-        }, 25);
-    })
-
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      divDescription?.classList.remove('opacity-0');
+      webDeveloper?.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-1s');
+      description?.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-2s');
+      console.log('hello');
+    }, 25);
+  });
 </script>
