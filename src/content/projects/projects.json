@@ -36,5 +36,18 @@
     "img": "/img/work/rest-countries.webp",
     "code": "https://github.com/JesugG17/react-projects/tree/main/rest-countries",
     "deploy": "https://rest-countries-g17.netlify.app/#/home"
+  },
+  {
+    "name": "Mini Sitec",
+    "technologies": [
+      { "name": "JavaScript", "img": "/img/skills/javascript.svg" },
+      { "name": "Vue", "img": "/img/skills/vue.png" },
+      { "name": "NodeJS", "img": "/img/skills/nodejs.svg" },
+      { "name": "ExpressJS", "img": "/img/skills/express-js.svg" },
+      { "name": "Postgresql", "img": "/img/skills/postgresql.svg" }
+    ],
+    "img": "/img/work/mini-sitec.png",
+    "code": "https://github.com/namascasia/Mini-Sitec",
+    "deploy": "https://proyecto-web-production-c33b.up.railway.app/#/inicio"
   }
 ]

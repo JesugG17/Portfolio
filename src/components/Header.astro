@@ -1,19 +1,20 @@
 ---
-import { getCollection } from "astro:content";
-const socialMediaCollection = await getCollection("social-media");
-const socialMediaInfo = socialMediaCollection.flatMap(socialMedia => socialMedia.data);
+import { getCollection } from 'astro:content';
+const socialMediaCollection = await getCollection('social-media');
+const socialMediaInfo = socialMediaCollection.flatMap((socialMedia) => socialMedia.data);
 ---
 
 <header class="flex justify-center z-50 w-full items-center absolute top-0 right-0 p-3 text-white">
-   <ul class="flex gap-4">
-        {
-         socialMediaInfo.map(item => (
-            <li class="flex items-center gap-2 hover:scale-105 hover:brightness-110 transition-transform duration-200">
-               <img class="invert w-4 md:w-6 lg:w-8" src={item.img} alt={`${item.name} icon`} />
-               <a download="cv-gastelum" href={item.link} target="_blank">{item.name}</a>
-            </li>
-         ))
-
-        }
-   </ul>
+  <ul class="flex gap-4">
+    {
+      socialMediaInfo.map((item) => (
+        <li class="flex items-center gap-2 hover:scale-105 hover:brightness-110 transition-transform duration-200">
+          <img class="invert w-4 md:w-6 lg:w-8" src={item.img} alt={`${item.name} icon`} />
+          <a download="cv-gastelum" href={item.link} target="_blank">
+            {item.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </header>

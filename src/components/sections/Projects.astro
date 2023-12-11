@@ -1,19 +1,21 @@
 ---
-import { getCollection } from "astro:content";
-import ProjectItem from "../ProjectItem.astro";
+import { getCollection } from 'astro:content';
+import ProjectItem from '../ProjectItem.astro';
 
 const projectsColletion = await getCollection('projects');
-const projects = projectsColletion.map(project => project.data).flat();
-
+const projects = projectsColletion.map((project) => project.data).flat();
 ---
+
 <section class="min-h-screen bg-background-skills flex flex-col gap-5 text-white relative">
-    <h2 class="hidden text-center text-4xl font-bold projects animate__animated animate__fadeInUp animation__delay-4s">Projects</h2>
-    <ul class="grid grid-cols-1 place-items-center w-full gap-5 md:grid-cols-2 mb-20 xl:grid-cols-3">
-        {
-            projects.map(project => (
-                <ProjectItem project={project} />
-            ))
-        }
-    </ul>
-    <svg class="absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#000000" fill-opacity="1" d="M0,224L1440,64L1440,320L0,320Z"></path></svg>
+  <h2
+    class="hidden text-center text-4xl font-bold projects animate__animated animate__fadeInUp animation__delay-4s"
+  >
+    Projects
+  </h2>
+  <ul class="grid grid-cols-1 place-items-center w-full gap-5 md:grid-cols-2 mb-20 xl:grid-cols-3">
+    {projects.map((project) => <ProjectItem project={project} />)}
+  </ul>
+  <svg class="absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"
+    ><path fill="#000000" fill-opacity="1" d="M0,224L1440,64L1440,320L0,320Z"></path></svg
+  >
 </section>

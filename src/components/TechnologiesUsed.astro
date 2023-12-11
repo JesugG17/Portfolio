@@ -1,20 +1,19 @@
 ---
 interface Props {
-    technologies: { name: string, img: string }[];
+  technologies: { name: string; img: string }[];
 }
 
 const { technologies } = Astro.props;
 ---
 
-
 <article class="absolute p-2">
-    <ul class="flex justify-center flex-wrap gap-1">
-        {
-            technologies.map(tech => (
-                <li class="bg-black flex gap-2 border-2 rounded-md p-1 text-white justify-center w-6  lg:w-8">
-                    <img  class={`${tech.name === "ExpressJS" ? "invert" : ""} w-4`} src={tech.img} alt="" />
-                </li>
-            ))
-        }
-    </ul>
+  <ul class="flex justify-center flex-wrap gap-1">
+    {
+      technologies.map((tech) => (
+        <li class="bg-black flex gap-2 border-2 rounded-md p-1 text-white justify-center w-6  lg:w-8">
+          <img class={`${tech.name === 'ExpressJS' ? 'invert' : ''} w-4`} src={tech.img} alt="" />
+        </li>
+      ))
+    }
+  </ul>
 </article>
