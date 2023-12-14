@@ -9,8 +9,16 @@ const socialMediaInfo = socialMediaCollection.flatMap((socialMedia) => socialMed
     {
       socialMediaInfo.map((item) => (
         <li class="flex items-center gap-2 hover:scale-105 hover:brightness-110 transition-transform duration-200">
-          <img class="invert w-4 md:w-6 lg:w-8" src={item.img} alt={`${item.name} icon`} />
-          <a download="cv-gastelum" href={item.link} target="_blank">
+          <img
+            class="invert w-4 md:w-6 lg:w-8"
+            src={item.img}
+            alt={`${item.name} icon`}
+          />
+          <a
+            download="cv-gastelum"
+            href={item.link}
+            target="_blank"
+          >
             {item.name}
           </a>
         </li>
