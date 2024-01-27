@@ -1,5 +1,20 @@
 [
   {
+    "name": "GestionTLA",
+    "technologies": [
+      { "name": "CSS", "img": "/img/skills/css3.svg" },
+      { "name": "TypeScript", "img": "/img/skills/typescript.svg" },
+      { "name": "JavaScript", "img": "/img/skills/javascript.svg" },
+      { "name": "Vue", "img": "/img/skills/vue.png" },
+      { "name": "NodeJS", "img": "/img/skills/nodejs.svg" },
+      { "name": "ExpressJS", "img": "/img/skills/express-js.svg" },
+      { "name": "MySQL", "img": "/img/skills/mysql.png" }
+    ],
+    "img": "/img/work/gestionTLA.png",
+    "code": "private",
+    "deploy": "https://demo-titanium.vercel.app/#/"
+  },
+  {
     "name": "Tasks App",
     "technologies": [
       { "name": "TypeScript", "img": "/img/skills/typescript.svg" },

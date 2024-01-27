@@ -9,7 +9,9 @@ const { project } = Astro.props;
 ---
 
 <li
-  class="hidden project__item relative border-2 rounded w-4/5 flex-col bg-background shadow-lg h-[150px] md:h-[170px] lg:h-[200px] xl:h[250px] max-w-[400px] projectItem animate__animated animate__fadeInUp animation__delay-4s"
+  class={`hidden project__item relative border-2 rounded w-4/5 flex-col bg-background shadow-lg h-[150px] md:h-[170px] lg:h-[200px] xl:h[250px] max-w-[400px] projectItem animate__animated animate__fadeInUp animation__delay-4s ${
+    project.name === 'GestionTLA' ? 'border-yellow-300' : 'border-white'
+  }`}
 >
   <TechnologiesUsed technologies={project.technologies} />
   <picture class="overflow-hidden">
@@ -22,7 +24,7 @@ const { project } = Astro.props;
   </picture>
   <article class="flex w-full text-white justify-between bg-black p-2">
     <a
-      class="hover:scale-105 transition-all duration-200"
+      class={`hover:scale-105 transition-all duration-200 ${project.code === 'private' && 'brightness-50 pointer-events-none'}`}
       href={project.code}
       target="_blank"
     >
@@ -33,7 +35,7 @@ const { project } = Astro.props;
         loading="lazy"
       />
     </a>
-    <strong class="cursor-pointer">{project.name}</strong>
+    <strong class="cursor-pointer">{project.name === 'GestionTLA' ? `${project.name} (Cliente real)` : project.name}</strong>
     <a
       class="hover:scale-105 transition-all duration-200"
       href={project.deploy}
