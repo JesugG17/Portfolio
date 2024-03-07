@@ -10,16 +10,47 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Jesus Gastelum portfolio" />
-    <meta name="author" content="Jesus Gastelum" />
-    <meta name="keywords" content="portfolio, jesus gastelum, jesus chaparro" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png+xml" href="/img/coding-white.png" />
+    <meta
+      name="description"
+      content="I'm Jesus Gastelum, a full stack web developer, learning new things every day"
+    />
+    <meta
+      name="author"
+      content="Jesus Gastelum"
+    />
+    <meta
+      property="og:title"
+      content="Jesus Gastelum - Full stack web developer"
+    />
+    <meta
+      property="og:description"
+      content="I'm Jesus Gastelum, a full stack web developer, learning new things every day"
+    />
+    <meta
+      property="og:url"
+      content="https://jesusg17.com"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, jesus gastelum, jesus chaparro"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <link
+      rel="icon"
+      type="image/png+xml"
+      href="/img/coding-white.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
     <title>{title}</title>
   </head>
   <body>
@@ -57,11 +88,7 @@ const { title } = Astro.props;
 
     if (scrollY > 500) {
       skillsContainer?.classList.remove('opacity-0');
-      skillsContainer?.classList.add(
-        'animate__animated',
-        'animate__fadeInUp',
-        'animation__delay-4s'
-      );
+      skillsContainer?.classList.add('animate__animated', 'animate__fadeInUp', 'animation__delay-4s');
     }
 
     if (scrollY > 900) {
